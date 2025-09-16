@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bunny Resume Website</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: #f9fafb;
+      color: #b03e3e;
+      line-height: 1.6;
+    }
+
+    /* Header */
+    header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: #010309;
+      color: white;
+      padding: 15px;
+      z-index: 1000;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header h1 { margin: 0; font-size: 22px; }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+      font-weight: 600;
+    }
+
+    /* Add space so content not hidden behind fixed navbar */
+    .content { padding-top: 80px; }
+
+    /* About Section */
+    #about {
+      display: flex;
+      align-items: center;
+      padding: 40px;
+      background: #e0f2fe;
+    }
+    #about img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      margin-right: 20px;
+    }
+
+    /* Skills Section (Flexbox) */
+    #skills {
+      padding: 40px;
+      background: #f1f5f9;
+    }
+    .skill-list {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+    .skill {
+      background: white;
+      padding: 20px;
+      margin: 10px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      flex: 1 1 150px;
+      text-align: center;
+    }
+
+    /* Projects Section (Grid) */
+    #projects {
+      padding: 40px;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px;
+    }
+    .gallery img {
+      width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    /* Contact Section */
+    #contact {
+      padding: 40px;
+      background: #558aad;
+    }
+    form {
+      max-width: 500px;
+      margin: auto;
+      background: rgb(19, 4, 4);
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+    button {
+      background: #ff4310;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: 600;
+    }
+    button:hover { background: #1d4ed8; }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 15px;
+      background: #d86b6b;
+      color: rgb(88, 96, 186);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>My Resume</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <div class="content">
+
+    <!-- About -->
+    <section id="about">
+      <img src="c:\Users\deepa\Downloads\compsny business proposal\1MY IMG.jpg" alt="My Photo">
+      <div>
+        <h2>About Me</h2>
+        <p>Hi Hello Namesta!My name is SRIDHAR BANDARU</p>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills">
+      <h2>My Skills</h2>
+      <div class="skill-list">
+        <div class="skill">PYTHON</div>
+        <div class="skill">DATA STRUCTURES</div>
+        <div class="skill">HTML</div>
+        <div class="skill">Others

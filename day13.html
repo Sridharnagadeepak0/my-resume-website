@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Day 13 - CSS Grid Photo Gallery</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #9fb36c;
+      padding: 25px;
+    }
+
+    .gallery {
+      display: grid;  
+      grid-template-columns: 100px 100px 100px; 
+      grid-template-rows: repeat(3,1fr); 
+      gap: 10px;  
+    }
+
+    .gallery img {
+      width: 100%;
+      height: 100%;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(161, 31, 31, 0.2);
+    }
+  </style>
+</head>
+<body>
+
+  <h2>My Photo Gallery</h2>
+  <div class="gallery">
+    <img src="c:\Users\deepa\Downloads\IMG_20250115_224247.jpg" alt="Photo 1">
+    <img src="c:\Users\deepa\OneDrive\画像\AdobeStock_587535356_Preview.jpeg" alt="Photo 2">
+    <img src="c:\Users\deepa\OneDrive\画像\Camera Roll\WIN_20250520_14_17_51_Pro.jpg" alt="Photo 3">
+    <img src="https://picsum.photos/300/200?4" alt="Photo 4">
+    <img src="https://picsum.photos/300/200?5" alt="Photo 5">
+    <img src="https://picsum.photos/300/200?6" alt="Photo 6">
+  </div>
+
+</body>
+</html>
+

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Day 12 - Flexbox 3 Column Layout</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      display: flex;               /* activate flexbox */
+      flex-direction: row;         /* horizontal row */
+      min-height: 100vh;           /* full height */
+    }
+
+    .sidebar {
+      background: #1e293b;
+      color: white;
+      padding: 20px;
+      width: 200px;                /* fixed width */
+    }
+
+    .content {
+      background: #f1f5f9;
+      flex: 1;                     /* take all remaining space */
+      padding: 20px;
+    }
+
+    .rightbar {
+      background: #334155;
+      color: white;
+      padding: 20px;
+      width: 200px;                /* fixed width */
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="sidebar">Left Sidebar<br>Navigation / Menu</div>
+    <div class="content">
+      <h2>Main Content</h2>
+      <p>Once upon a time a village is there.</p>
+    </div>
+    <div class="rightbar">Right Sidebar<br>Ads / Links</div>
+  </div>
+
+</body>
+</html>
+

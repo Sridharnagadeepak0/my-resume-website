@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Day 17 - Pricing Plans</title>
+  <style>
+    :root {
+      --main-color: 
+      #000000;
+      --highlight: #050605;
+      --bg: #f1f5f9;
+      --text: #333;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: var(--bg);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+    }
+
+    .pricing {
+      display: flex;
+      gap: 20px;
+    }
+
+    .card {
+      background: rgb(176, 131, 236);
+      border-radius: 10px;
+      padding: 20px;
+      width: 220px;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      position: relative;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card h3 {
+      margin: 0 0 10px;
+      color: var(--main-color);
+    }
+
+    .card p {
+      margin: 5px 0;
+      color: var(--text);
+    }
+
+    .price {
+      font-size: 24px;
+      font-weight: bold;
+      margin: 15px 0;
+    }
+
+    .btn {
+      background: var(--main-color);
+      color: rgb(199, 204, 206);
+      border: none;
+      padding: 10px 15px;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    .btn:hover {
+      background: darkblue;
+    }
+
+    /* Highlight Best Plan */
+    .best {
+      border: 3px solid var(--highlight);
+      transform: scale(1.05);
+    }
+
+    .best::before {
+      content: "✨ Best Plan";
+      position: absolute;
+      top: -15px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: var(--highlight);
+      color: white;
+      padding: 5px 10px;
+      border-radius: 6px;
+      font-size: 14px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="pricing">
+    <div class="card">
+      <h3>Basic</h3>
+      <div class="price">₹299</div>
+      <button class="btn">Choose</button>
+    </div>
+
+    <div class="card best">
+      <h3>Standard</h3>
+      <div class="price">₹499</div>
+      <button class="btn">Choose</button>
+    </div>
+
+    <div class="card">
+      <h3>Premium</h3>
+      <div class="price">₹799</div>
+      <button class="btn">Choose</button>
+    </div>
+  </div>
+
+</body>
+</html>

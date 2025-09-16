@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Day 11 CSS-Navigation bar</title>
+  <style>
+    body {
+      margin: 0;
+      font-size: medium;
+      font-family: 'Times New Roman', Times, serif;
+    }
+
+    .navbar {
+      position: fixed;
+      top: 5;
+      left: 5;
+      width: 100%;
+      background-color: #ee0a21;
+      padding: 15px;
+      z-index: 1000;
+    }
+    .navbar a {
+      color: rgb(246, 239, 239);
+      text-decoration:none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+
+    .content {
+      padding-top: 80px;
+    }
+
+    section {
+      padding: 50px;
+      border-bottom: 1px solid;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="navbar">
+     <a href="#about">About</a>
+     <a href="skills">Skills</a>
+     <a href="education">Education</a>
+     <a href="contact">Contact</a>
+</div>
+
+<div class="content">
+  <section id="about">
+    <h2>About me</h2>
+    <p>Hi Hello Namesta Nenu Me NAGARJUNA BIGG BOSS 9</p>
+  </section>
+  
+  <section id="skills">
+    <h2>skills</h2>
+    <p>Entertinement,singing songs,Angry,cooking</p>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <p>SSC,BTECH,INTER,Anyone</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email:biggboss9@gmail.com</p>
+  </section>
+</div>
+</body>
+</html>
+  
+  
